@@ -1,5 +1,55 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- activity -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- addChild -->
+    <dimen name="addChildButtonMargin">25dp</dimen>
+
+    <!-- childRewards -->
+    <dimen name="childRewardsMarginTop">10dp</dimen>
+    <dimen name="childRewardsTextSize">40sp</dimen>
+
+    <!-- childCard -->
+    <dimen name="childCardMargin">8dp</dimen>
+    <dimen name="childCardCornerRadius">25dp</dimen>
+    <dimen name="childCardHeight">170dp</dimen>
+
+    <!-- check -->
+    <dimen name="checkIconWidth">25dp</dimen>
+    <dimen name="checkIconHeight">25dp</dimen>
+    <dimen name="checkIconMarginStart">8dp</dimen>
+    <dimen name="checkIconMarginTop">8dp</dimen>
+
+    <dimen name="checkTextMarginStart">8dp</dimen>
+    <dimen name="checkTextMarginTop">20dp</dimen>
+
+    <!-- heart -->
+    <dimen name="heartIconWidth">25dp</dimen>
+    <dimen name="heartIconHeight">25dp</dimen>
+    <dimen name="heartIconMarginBottom">48dp</dimen>
+    <dimen name="heartIconMarginStart">8dp</dimen>
+
+    <dimen name="heartTextMarginStart">8dp</dimen>
+    <dimen name="heartTextMarginBottom">48dp</dimen>
+
+    <!-- pencil -->
+    <dimen name="pencilIconMarginTop">8dp</dimen>
+    <dimen name="pencilIconMarginEnd">8dp</dimen>
+
+    <!-- childAvatar -->
+    <dimen name="childAvatarWidth">70dp</dimen>
+    <dimen name="childAvatarHeight">70dp</dimen>
+    <dimen name="childAvatarMarginEnd">0dp</dimen>
+    <dimen name="childAvatarMarginBottom">0dp</dimen>
+
+    <!-- childName -->
+    <dimen name="childNameMarginStart">15dp</dimen>
+    <dimen name="childNameTextSize">20sp</dimen>
+
+    <!-- circle -->
+    <dimen name="circleWidth">100dp</dimen>
+    <dimen name="circleHeight">100dp</dimen>
+    <dimen name="circleMarginStart">6dp</dimen>
+    <dimen name="circleMarginTop">6dp</dimen>
 </resources>

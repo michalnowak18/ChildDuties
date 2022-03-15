@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primaryTeal">#006057</color>
+
+    <color name="childCardBackgroundColor">#D9FFEA</color>
+    <color name="fragmentHomeBackgroundColor">#93E3B3</color>
 </resources>

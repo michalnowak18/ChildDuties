@@ -3,24 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/StudioProjects/ChildDuties/app/src/main/res/drawable/check.xml" value="0.196" />
-        <entry key="..\:/StudioProjects/ChildDuties/app/src/main/res/drawable/heart.xml" value="0.196" />
-        <entry key="..\:/StudioProjects/ChildDuties/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/StudioProjects/ChildDuties/app/src/main/res/layout/fragment_home.xml" value="0.34218009478672984" />
-        <entry key="..\:/StudioProjects/ChildDuties/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/circle.xml" value="0.1" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/dragon.xml" value="0.1425" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/frog1.xml" value="0.154" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/lizard.xml" value="0.154" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/snake.xml" value="0.154" />
-        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_home.xml" value="0.22377622377622378" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_notifications.xml" value="0.1824074074074074" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1824074074074074" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

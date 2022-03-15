@@ -1,6 +1,35 @@
 <resources>
+    <!-- appName -->
     <string name="app_name">ChildDuties</string>
-    <string name="title_home">Children</string>
+
+    <!-- title -->
+    <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- addChild -->
+    <string name="addChild">Add child</string>
+
+    <!-- childRewards -->
+    <string name="childRewards">Child Rewards</string>
+
+    <!-- child1 -->
+    <string name="checkValue1">0</string>
+    <string name="heartValue1">0</string>
+    <string name="childName1">Mateusz</string>
+
+    <!-- child2 -->
+    <string name="checkValue2">0</string>
+    <string name="heartValue2">0</string>
+    <string name="childName2">Jakub</string>
+
+    <!-- child3 -->
+    <string name="checkValue3">0</string>
+    <string name="heartValue3">0</string>
+    <string name="childName3">Jan</string>
+
+    <!-- child4 -->
+    <string name="checkValue4">0</string>
+    <string name="heartValue4">0</string>
+    <string name="childName4">Michał</string>
 </resources>
