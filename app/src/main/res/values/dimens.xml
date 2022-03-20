@@ -22,7 +22,7 @@
     <dimen name="checkIconMarginTop">8dp</dimen>
 
     <dimen name="checkTextMarginStart">8dp</dimen>
-    <dimen name="checkTextMarginTop">20dp</dimen>
+    <dimen name="checkTextMarginTop">8dp</dimen>
 
     <!-- heart -->
     <dimen name="heartIconWidth">25dp</dimen>
@@ -52,4 +52,9 @@
     <dimen name="circleHeight">100dp</dimen>
     <dimen name="circleMarginStart">6dp</dimen>
     <dimen name="circleMarginTop">6dp</dimen>
+
+    <dimen name="iconPadding">8dp</dimen>
+    <dimen name="radioButtonMargin">90dp</dimen>
+    <dimen name="behaviourStartMargin">50dp</dimen>
+    <dimen name="dutiesEndMargin">70dp</dimen>
 </resources>

@@ -55,28 +55,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-                <ImageView
-                    android:id="@+id/check1"
-                    android:layout_width="@dimen/checkIconWidth"
-                    android:layout_height="@dimen/checkIconHeight"
-                    android:layout_marginStart="@dimen/checkIconMarginStart"
-                    android:layout_marginTop="@dimen/checkIconMarginTop"
-                    app:layout_constraintStart_toEndOf="@+id/circle1"
-                    app:layout_constraintTop_toBottomOf="@+id/heart1"
-                    app:srcCompat="@drawable/check" />
-
-                <ImageView
-                    android:id="@+id/heart1"
-                    android:layout_width="@dimen/heartIconWidth"
-                    android:layout_height="@dimen/heartIconHeight"
-                    android:layout_marginBottom="@dimen/heartIconMarginBottom"
-                    android:layout_marginStart="@dimen/heartIconMarginStart"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle1"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/heart" />
-
                 <TextView
                     android:id="@+id/checkText1"
                     android:layout_width="wrap_content"
@@ -84,9 +62,10 @@
                     android:layout_marginStart="@dimen/checkTextMarginStart"
                     android:layout_marginTop="@dimen/checkTextMarginTop"
                     android:text="@string/checkValue1"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/check1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle1"
+                    app:layout_constraintTop_toBottomOf="@id/heartText1"
+                    app:drawableStartCompat="@drawable/check"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <TextView
                     android:id="@+id/heartText1"
@@ -96,8 +75,10 @@
                     android:layout_marginBottom="@dimen/heartTextMarginBottom"
                     android:text="@string/heartValue1"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/heart1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:drawableStartCompat="@drawable/heart"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <ImageView
                     android:id="@+id/pencil1"
@@ -160,27 +141,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/check2"
-                    android:layout_width="@dimen/checkIconWidth"
-                    android:layout_height="@dimen/checkIconHeight"
-                    android:layout_marginStart="@dimen/checkIconMarginStart"
-                    android:layout_marginTop="@dimen/checkIconMarginTop"
-                    app:srcCompat="@drawable/check"
-                    app:layout_constraintStart_toEndOf="@+id/circle2"
-                    app:layout_constraintTop_toBottomOf="@+id/heart2" />
-
-                <ImageView
-                    android:id="@+id/heart2"
-                    android:layout_width="@dimen/heartIconWidth"
-                    android:layout_height="@dimen/heartIconHeight"
-                    android:layout_marginBottom="@dimen/heartIconMarginBottom"
-                    android:layout_marginStart="@dimen/heartIconMarginStart"
-                    app:srcCompat="@drawable/heart"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle2"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:id="@+id/checkText2"
                     android:layout_width="wrap_content"
@@ -188,9 +148,10 @@
                     android:layout_marginStart="@dimen/checkTextMarginStart"
                     android:layout_marginTop="@dimen/checkTextMarginTop"
                     android:text="@string/checkValue2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/check2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle2"
+                    app:layout_constraintTop_toBottomOf="@id/heartText2"
+                    app:drawableStartCompat="@drawable/check"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <TextView
                     android:id="@+id/heartText2"
@@ -200,8 +161,10 @@
                     android:layout_marginBottom="@dimen/heartTextMarginBottom"
                     android:text="@string/heartValue2"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/heart2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:drawableStartCompat="@drawable/heart"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <ImageView
                     android:id="@+id/pencil2"
@@ -263,27 +226,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/check3"
-                    android:layout_width="@dimen/checkIconWidth"
-                    android:layout_height="@dimen/checkIconHeight"
-                    android:layout_marginStart="@dimen/checkIconMarginStart"
-                    android:layout_marginTop="@dimen/checkIconMarginTop"
-                    app:srcCompat="@drawable/check"
-                    app:layout_constraintStart_toEndOf="@+id/circle3"
-                    app:layout_constraintTop_toBottomOf="@+id/heart3" />
-
-                <ImageView
-                    android:id="@+id/heart3"
-                    android:layout_width="@dimen/heartIconWidth"
-                    android:layout_height="@dimen/heartIconHeight"
-                    android:layout_marginBottom="@dimen/heartIconMarginBottom"
-                    android:layout_marginStart="@dimen/heartIconMarginStart"
-                    app:srcCompat="@drawable/heart"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle3"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:id="@+id/checkText3"
                     android:layout_width="wrap_content"
@@ -291,9 +233,10 @@
                     android:layout_marginStart="@dimen/checkTextMarginStart"
                     android:layout_marginTop="@dimen/checkTextMarginTop"
                     android:text="@string/checkValue3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/check3"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle3"
+                    app:layout_constraintTop_toBottomOf="@id/heartText3"
+                    app:drawableStartCompat="@drawable/check"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <TextView
                     android:id="@+id/heartText3"
@@ -303,8 +246,10 @@
                     android:layout_marginBottom="@dimen/heartTextMarginBottom"
                     android:text="@string/heartValue3"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/heart3"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:drawableStartCompat="@drawable/heart"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <ImageView
                     android:id="@+id/pencil3"
@@ -367,27 +312,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/check4"
-                    android:layout_width="@dimen/checkIconWidth"
-                    android:layout_height="@dimen/checkIconHeight"
-                    android:layout_marginStart="@dimen/checkIconMarginStart"
-                    android:layout_marginTop="@dimen/checkIconMarginTop"
-                    app:srcCompat="@drawable/check"
-                    app:layout_constraintStart_toEndOf="@+id/circle4"
-                    app:layout_constraintTop_toBottomOf="@+id/heart4" />
-
-                <ImageView
-                    android:id="@+id/heart4"
-                    android:layout_width="@dimen/heartIconWidth"
-                    android:layout_height="@dimen/heartIconHeight"
-                    android:layout_marginBottom="@dimen/heartIconMarginBottom"
-                    android:layout_marginStart="@dimen/heartIconMarginStart"
-                    app:srcCompat="@drawable/heart"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle4"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:id="@+id/checkText4"
                     android:layout_width="wrap_content"
@@ -395,9 +319,10 @@
                     android:layout_marginStart="@dimen/checkTextMarginStart"
                     android:layout_marginTop="@dimen/checkTextMarginTop"
                     android:text="@string/checkValue4"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/check4"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle4"
+                    app:layout_constraintTop_toBottomOf="@id/heartText4"
+                    app:drawableStartCompat="@drawable/check"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <TextView
                     android:id="@+id/heartText4"
@@ -407,8 +332,10 @@
                     android:layout_marginBottom="@dimen/heartTextMarginBottom"
                     android:text="@string/heartValue4"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/heart4"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/circle4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:drawableStartCompat="@drawable/heart"
+                    android:drawablePadding="@dimen/iconPadding"/>
 
                 <ImageView
                     android:id="@+id/pencil4"

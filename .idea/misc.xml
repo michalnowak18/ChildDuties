@@ -3,14 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/check.xml" value="0.253" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/checkIcon.xml" value="0.2115" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/circle.xml" value="0.1" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/dragon.xml" value="0.1425" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/frog1.xml" value="0.154" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/heart.xml" value="0.2395" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/heartIcon.xml" value="0.2395" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/lizard.xml" value="0.154" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/drawable/snake.xml" value="0.154" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_dashboard.xml" value="0.23794871794871794" />
+        <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/layout/fragment_notifications.xml" value="0.1824074074074074" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1824074074074074" />
         <entry key="..\:/Users/micha/AndroidStudioProjects/ChildDuties/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />

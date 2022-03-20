@@ -4,8 +4,8 @@
 
     <!-- title -->
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Duties</string>
+    <string name="title_notifications">Reward</string>
 
     <!-- addChild -->
     <string name="addChild">Add child</string>
@@ -32,4 +32,6 @@
     <string name="checkValue4">0</string>
     <string name="heartValue4">0</string>
     <string name="childName4">Michał</string>
+    <string name="behaviourText">Behaviour</string>
+    <string name="dutiesText">Duties</string>
 </resources>
