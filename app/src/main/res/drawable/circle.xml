@@ -5,7 +5,8 @@
     android:viewportWidth="22"
     android:viewportHeight="22">
     <path
-        android:strokeColor="#006743"
+        android:fillColor="@color/childCardBackgroundColor"
+        android:strokeColor="@color/primaryTeal"
         android:strokeWidth="1"
         android:pathData="M11 21c5.52 0 10-4.48 10-10S16.52 1 11 1 1 5.48 1 11s4.48 10 10 10Z"/>
 </vector>

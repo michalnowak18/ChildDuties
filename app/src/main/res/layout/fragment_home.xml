@@ -91,18 +91,6 @@
                     app:srcCompat="@android:drawable/ic_menu_edit" />
 
                 <ImageView
-                    android:id="@+id/avatar1"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle1"
-                    app:layout_constraintEnd_toEndOf="@+id/circle1"
-                    app:layout_constraintStart_toStartOf="@+id/circle1"
-                    app:layout_constraintTop_toTopOf="@+id/circle1"
-                    app:srcCompat="@drawable/dragon" />
-
-                <ImageView
                     android:id="@+id/circle1"
                     android:layout_width="@dimen/circleWidth"
                     android:layout_height="@dimen/circleHeight"
@@ -111,6 +99,18 @@
                     android:src="@drawable/circle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/avatar1"
+                    android:layout_width="@dimen/childAvatarWidth"
+                    android:layout_height="@dimen/childAvatarHeight"
+                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle1"
+                    app:layout_constraintEnd_toEndOf="@+id/circle1"
+                    app:layout_constraintStart_toStartOf="@+id/circle1"
+                    app:layout_constraintTop_toTopOf="@+id/circle1"
+                    app:srcCompat="@drawable/dragon" />
 
                 <TextView
                     android:id="@+id/childName1"
@@ -177,18 +177,6 @@
                     app:srcCompat="@android:drawable/ic_menu_edit"/>
 
                 <ImageView
-                    android:id="@+id/avatar2"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle2"
-                    app:layout_constraintEnd_toEndOf="@+id/circle2"
-                    app:layout_constraintStart_toStartOf="@+id/circle2"
-                    app:layout_constraintTop_toTopOf="@+id/circle2"
-                    app:srcCompat="@drawable/lizard" />
-
-                <ImageView
                     android:id="@+id/circle2"
                     android:layout_width="@dimen/circleWidth"
                     android:layout_height="@dimen/circleHeight"
@@ -197,6 +185,18 @@
                     android:src="@drawable/circle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/avatar2"
+                    android:layout_width="@dimen/childAvatarWidth"
+                    android:layout_height="@dimen/childAvatarHeight"
+                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle2"
+                    app:layout_constraintEnd_toEndOf="@+id/circle2"
+                    app:layout_constraintStart_toStartOf="@+id/circle2"
+                    app:layout_constraintTop_toTopOf="@+id/circle2"
+                    app:srcCompat="@drawable/lizard" />
 
                 <TextView
                     android:id="@+id/childName2"
@@ -262,18 +262,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/avatar3"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle3"
-                    app:layout_constraintEnd_toEndOf="@+id/circle3"
-                    app:layout_constraintStart_toStartOf="@+id/circle3"
-                    app:layout_constraintTop_toTopOf="@+id/circle3"
-                    app:srcCompat="@drawable/snake" />
-
-                <ImageView
                     android:id="@+id/circle3"
                     android:layout_width="@dimen/circleWidth"
                     android:layout_height="@dimen/circleHeight"
@@ -282,6 +270,18 @@
                     android:src="@drawable/circle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/avatar3"
+                    android:layout_width="@dimen/childAvatarWidth"
+                    android:layout_height="@dimen/childAvatarHeight"
+                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle3"
+                    app:layout_constraintEnd_toEndOf="@+id/circle3"
+                    app:layout_constraintStart_toStartOf="@+id/circle3"
+                    app:layout_constraintTop_toTopOf="@+id/circle3"
+                    app:srcCompat="@drawable/snake" />
 
                 <TextView
                     android:id="@+id/childName3"
@@ -348,18 +348,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/avatar4"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle4"
-                    app:layout_constraintEnd_toEndOf="@+id/circle4"
-                    app:layout_constraintStart_toStartOf="@+id/circle4"
-                    app:layout_constraintTop_toTopOf="@+id/circle4"
-                    app:srcCompat="@drawable/frog1" />
-
-                <ImageView
                     android:id="@+id/circle4"
                     android:layout_width="@dimen/circleWidth"
                     android:layout_height="@dimen/circleHeight"
@@ -368,6 +356,18 @@
                     android:src="@drawable/circle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/avatar4"
+                    android:layout_width="@dimen/childAvatarWidth"
+                    android:layout_height="@dimen/childAvatarHeight"
+                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle4"
+                    app:layout_constraintEnd_toEndOf="@+id/circle4"
+                    app:layout_constraintStart_toStartOf="@+id/circle4"
+                    app:layout_constraintTop_toTopOf="@+id/circle4"
+                    app:srcCompat="@drawable/frog1" />
 
                 <TextView
                     android:id="@+id/childName4"
