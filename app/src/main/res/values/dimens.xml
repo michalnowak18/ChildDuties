@@ -2,6 +2,7 @@
     <!-- activity -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragmentPadding">8dp</dimen>
 
     <!-- addButton -->
     <dimen name="addButtonMargin">14dp</dimen>
@@ -53,20 +54,24 @@
     <dimen name="circleMarginStart">6dp</dimen>
     <dimen name="circleMarginTop">6dp</dimen>
 
+    <!-- textViewIcon -->
     <dimen name="iconPadding">8dp</dimen>
+
+    <!-- dashboardButtonsAndText -->
     <dimen name="radioButtonMargin">90dp</dimen>
     <dimen name="behaviourStartMargin">50dp</dimen>
     <dimen name="dutiesEndMargin">70dp</dimen>
-    <dimen name="circleDashboardWidth">79dp</dimen>
-    <dimen name="circleDashboardHeight">79dp</dimen>
-    <dimen name="avatarDashboardWidth">50dp</dimen>
-    <dimen name="avatarDashboardHeight">50dp</dimen>
-    <dimen name="fragmentPadding">8dp</dimen>
     <dimen name="dashboardTextSize">20sp</dimen>
     <dimen name="textInputDashboardMarginTop">16dp</dimen>
     <dimen name="textInputStrokeWidth">3dp</dimen>
     <dimen name="assignedToMarginTop">40dp</dimen>
     <dimen name="assignedToTextSize">20sp</dimen>
+
+    <!-- dashboardAvatars -->
+    <dimen name="circleDashboardWidth">79dp</dimen>
+    <dimen name="circleDashboardHeight">79dp</dimen>
+    <dimen name="avatarDashboardWidth">50dp</dimen>
+    <dimen name="avatarDashboardHeight">50dp</dimen>
     <dimen name="avatarDashboardMargin">4dp</dimen>
     <dimen name="avatarDashboardCornerRadius">40dp</dimen>
 </resources>

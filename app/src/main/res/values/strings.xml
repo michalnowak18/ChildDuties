@@ -32,6 +32,8 @@
     <string name="checkValue4">0</string>
     <string name="heartValue4">0</string>
     <string name="childName4">Michał</string>
+
+    <!-- dashboardTexts -->
     <string name="behaviourText">Behaviour</string>
     <string name="dutiesText">Duties</string>
     <string name="nameFieldDashboardHint">Name</string>
