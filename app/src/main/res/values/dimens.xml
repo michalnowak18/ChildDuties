@@ -3,8 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!-- addChild -->
-    <dimen name="addChildButtonMargin">25dp</dimen>
+    <!-- addButton -->
+    <dimen name="addButtonMargin">14dp</dimen>
 
     <!-- childRewards -->
     <dimen name="childRewardsMarginTop">10dp</dimen>
@@ -61,4 +61,12 @@
     <dimen name="circleDashboardHeight">79dp</dimen>
     <dimen name="avatarDashboardWidth">50dp</dimen>
     <dimen name="avatarDashboardHeight">50dp</dimen>
+    <dimen name="fragmentPadding">8dp</dimen>
+    <dimen name="dashboardTextSize">20sp</dimen>
+    <dimen name="textInputDashboardMarginTop">16dp</dimen>
+    <dimen name="textInputStrokeWidth">3dp</dimen>
+    <dimen name="assignedToMarginTop">40dp</dimen>
+    <dimen name="assignedToTextSize">20sp</dimen>
+    <dimen name="avatarDashboardMargin">4dp</dimen>
+    <dimen name="avatarDashboardCornerRadius">40dp</dimen>
 </resources>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fragmentHomeBackgroundColor"
-    android:padding="14dp"
+    android:background="@color/fragmentBackgroundColor"
+    android:padding="@dimen/fragmentPadding"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,7 +31,7 @@
             android:layout_marginStart="@dimen/behaviourStartMargin"
             android:drawablePadding="@dimen/iconPadding"
             android:text="@string/behaviourText"
-            android:textSize="20sp"
+            android:textSize="@dimen/dashboardTextSize"
             app:drawableEndCompat="@drawable/heart"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/behaviourButton" />
@@ -51,7 +51,7 @@
             android:layout_marginEnd="@dimen/dutiesEndMargin"
             android:drawablePadding="@dimen/iconPadding"
             android:text="@string/dutiesText"
-            android:textSize="20sp"
+            android:textSize="@dimen/dashboardTextSize"
             app:drawableEndCompat="@drawable/check"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dutiesButton" />
@@ -63,10 +63,10 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Name"
-        app:boxStrokeColor="@color/primaryTeal"
-        app:boxStrokeWidth="3dp"
+        android:layout_marginTop="@dimen/textInputDashboardMarginTop"
+        android:hint="@string/nameFieldDashboardHint"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="@dimen/textInputStrokeWidth"
         app:boxBackgroundColor="@color/childCardBackgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,10 +85,10 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Repeat"
-        app:boxStrokeColor="@color/primaryTeal"
-        app:boxStrokeWidth="3dp"
+        android:layout_marginTop="@dimen/textInputDashboardMarginTop"
+        android:hint="@string/repeatFieldDashboardHint"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="@dimen/textInputStrokeWidth"
         app:boxBackgroundColor="@color/childCardBackgroundColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,9 +106,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:text="Assigned to:"
+        android:layout_marginTop="@dimen/assignedToMarginTop"
+        android:textSize="@dimen/assignedToTextSize"
+        android:text="@string/assignedToText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repeatField" />
 
@@ -124,9 +124,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/avatarDashboardMargin"
             app:cardBackgroundColor="@color/transparent"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="@dimen/avatarDashboardCornerRadius"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_row="0">
@@ -161,9 +161,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/avatarDashboardMargin"
             app:cardBackgroundColor="@color/transparent"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="@dimen/avatarDashboardCornerRadius"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_row="0">
@@ -199,14 +199,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/transparent"
-            app:cardCornerRadius="40dp"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/avatarDashboardMargin"
+            app:cardCornerRadius="@dimen/avatarDashboardCornerRadius"
             app:layout_column="2"
             app:layout_columnWeight="1"
             app:layout_row="0">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
@@ -236,8 +236,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/transparent"
-            app:cardCornerRadius="40dp"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/avatarDashboardMargin"
+            app:cardCornerRadius="@dimen/avatarDashboardCornerRadius"
             app:layout_column="3"
             app:layout_columnWeight="1"
             app:layout_row="0">
@@ -269,5 +269,14 @@
 
         </androidx.cardview.widget.CardView>
     </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/addButtonMargin"
+        android:text="@string/addButtonDashboardText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

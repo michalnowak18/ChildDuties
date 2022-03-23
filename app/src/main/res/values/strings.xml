@@ -34,4 +34,8 @@
     <string name="childName4">Michał</string>
     <string name="behaviourText">Behaviour</string>
     <string name="dutiesText">Duties</string>
+    <string name="nameFieldDashboardHint">Name</string>
+    <string name="repeatFieldDashboardHint">Repeat</string>
+    <string name="assignedToText">Assigned to:</string>
+    <string name="addButtonDashboardText">Add</string>
 </resources>

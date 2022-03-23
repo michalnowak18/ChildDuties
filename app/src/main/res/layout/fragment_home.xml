@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fragmentHomeBackgroundColor"
+    android:background="@color/fragmentBackgroundColor"
+    android:padding="@dimen/fragmentPadding"
     tools:context=".ui.home.HomeFragment">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/addChildButtonMargin"
+        android:layout_margin="@dimen/addButtonMargin"
         android:text="@string/addChild"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
