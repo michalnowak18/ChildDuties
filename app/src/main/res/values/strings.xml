@@ -40,4 +40,6 @@
     <string name="repeatFieldDashboardHint">Repeat</string>
     <string name="assignedToText">Assigned to:</string>
     <string name="addButtonDashboardText">Add</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

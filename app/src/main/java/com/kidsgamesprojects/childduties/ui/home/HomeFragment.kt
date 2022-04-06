@@ -8,8 +8,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.kidsgamesprojects.childduties.databinding.FragmentHomeBinding
+import com.kidsgamesprojects.childduties.ui.BaseFragment
+import com.kidsgamesprojects.childduties.utils.ResourceUtils
 
-class HomeFragment : Fragment() {
+class HomeFragment : BaseFragment<HomeViewModel>(HomeViewModel::class.java) {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -22,17 +24,18 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.viewModel = this.viewModel
+        binding.resourceUtils = ResourceUtils
+        binding.lifecycleOwner = this
     }
 
     override fun onDestroyView() {

@@ -74,4 +74,7 @@
     <dimen name="avatarDashboardHeight">50dp</dimen>
     <dimen name="avatarDashboardMargin">4dp</dimen>
     <dimen name="avatarDashboardCornerRadius">40dp</dimen>
+    <dimen name="heartTextMarginTop">24dp</dimen>
+    <dimen name="childNameMarginBottom">15dp</dimen>
+    <dimen name="gridLayoutDashboardMarginStart">16dp</dimen>
 </resources>

@@ -1,389 +1,418 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/fragmentBackgroundColor"
-    android:padding="@dimen/fragmentPadding"
-    tools:context=".ui.home.HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/addButtonMargin"
-        android:text="@string/addChild"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/childRewardsMarginTop"
-        android:text="@string/childRewards"
-        android:textAlignment="center"
-        android:textSize="@dimen/childRewardsTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:columnCount="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_home"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_height="match_parent"
+        android:background="@color/fragmentBackgroundColor"
+        android:padding="@dimen/fragmentPadding"
+        tools:context=".ui.home.HomeFragment">
 
-        <androidx.cardview.widget.CardView
+        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/childCardHeight"
-            android:layout_margin="@dimen/childCardMargin"
-            app:cardBackgroundColor="@color/childCardBackgroundColor"
-            app:cardCornerRadius="@dimen/childCardCornerRadius"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_row="0">
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/addButtonMargin"
+            android:onClick="@{() -> viewModel.navigateToAddChild()}"
+            android:text="@string/addChild"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/checkText1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/checkTextMarginStart"
-                    android:layout_marginTop="@dimen/checkTextMarginTop"
-                    android:text="@string/checkValue1"
-                    app:layout_constraintStart_toEndOf="@+id/circle1"
-                    app:layout_constraintTop_toBottomOf="@id/heartText1"
-                    app:drawableStartCompat="@drawable/check"
-                    android:drawablePadding="@dimen/iconPadding"/>
-
-                <TextView
-                    android:id="@+id/heartText1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/heartTextMarginStart"
-                    android:layout_marginBottom="@dimen/heartTextMarginBottom"
-                    android:text="@string/heartValue1"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle1"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableStartCompat="@drawable/heart"
-                    android:drawablePadding="@dimen/iconPadding"/>
-
-                <ImageView
-                    android:id="@+id/pencil1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pencilIconMarginTop"
-                    android:layout_marginEnd="@dimen/pencilIconMarginEnd"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@android:drawable/ic_menu_edit" />
-
-                <ImageView
-                    android:id="@+id/circle1"
-                    android:layout_width="@dimen/circleWidth"
-                    android:layout_height="@dimen/circleHeight"
-                    android:layout_marginStart="@dimen/circleMarginStart"
-                    android:layout_marginTop="@dimen/circleMarginTop"
-                    android:src="@drawable/circle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/avatar1"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle1"
-                    app:layout_constraintEnd_toEndOf="@+id/circle1"
-                    app:layout_constraintStart_toStartOf="@+id/circle1"
-                    app:layout_constraintTop_toTopOf="@+id/circle1"
-                    app:srcCompat="@drawable/dragon" />
-
-                <TextView
-                    android:id="@+id/childName1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/childNameMarginStart"
-                    android:text="@string/childName1"
-                    android:textSize="@dimen/childNameTextSize"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/avatar1" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+        <TextView
+            android:id="@+id/text_home"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/childCardHeight"
-            android:layout_margin="@dimen/childCardMargin"
-            app:cardBackgroundColor="@color/childCardBackgroundColor"
-            app:cardCornerRadius="@dimen/childCardCornerRadius"
-            app:layout_column="1"
-            app:layout_columnWeight="1"
-            app:layout_row="0">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/childRewardsMarginTop"
+            android:text="@string/childRewards"
+            android:textAlignment="center"
+            android:textSize="@dimen/childRewardsTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_home"
+            app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/checkText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/checkTextMarginStart"
-                    android:layout_marginTop="@dimen/checkTextMarginTop"
-                    android:text="@string/checkValue2"
-                    app:layout_constraintStart_toEndOf="@+id/circle2"
-                    app:layout_constraintTop_toBottomOf="@id/heartText2"
-                    app:drawableStartCompat="@drawable/check"
-                    android:drawablePadding="@dimen/iconPadding"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/childCardMargin"
+                app:cardBackgroundColor="@color/childCardBackgroundColor"
+                app:cardCornerRadius="@dimen/childCardCornerRadius"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="0">
 
-                <TextView
-                    android:id="@+id/heartText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/heartTextMarginStart"
-                    android:layout_marginBottom="@dimen/heartTextMarginBottom"
-                    android:text="@string/heartValue2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableStartCompat="@drawable/heart"
-                    android:drawablePadding="@dimen/iconPadding"/>
 
-                <ImageView
-                    android:id="@+id/pencil2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pencilIconMarginTop"
-                    android:layout_marginEnd="@dimen/pencilIconMarginEnd"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@android:drawable/ic_menu_edit"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/circle2"
-                    android:layout_width="@dimen/circleWidth"
-                    android:layout_height="@dimen/circleHeight"
-                    android:layout_marginStart="@dimen/circleMarginStart"
-                    android:layout_marginTop="@dimen/circleMarginTop"
-                    android:src="@drawable/circle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/checkText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/checkTextMarginStart"
+                        android:layout_marginTop="@dimen/checkTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(0).dutyPoints): "", default="0"}'
+                        app:layout_constraintStart_toEndOf="@+id/circle1"
+                        app:layout_constraintTop_toBottomOf="@id/heartText1"
+                        app:drawableStartCompat="@drawable/check"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-                <ImageView
-                    android:id="@+id/avatar2"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle2"
-                    app:layout_constraintEnd_toEndOf="@+id/circle2"
-                    app:layout_constraintStart_toStartOf="@+id/circle2"
-                    app:layout_constraintTop_toTopOf="@+id/circle2"
-                    app:srcCompat="@drawable/lizard" />
+                    <TextView
+                        android:id="@+id/heartText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/heartTextMarginStart"
+                        android:layout_marginBottom="@dimen/heartTextMarginBottom"
+                        android:layout_marginTop="@dimen/heartTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(0).behaviourPoints): "", default="0"}'
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/circle1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:drawableStartCompat="@drawable/heart"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-                <TextView
-                    android:id="@+id/childName2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/childNameMarginStart"
-                    android:text="@string/childName2"
-                    android:textSize="@dimen/childNameTextSize"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/avatar2" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/pencil1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pencilIconMarginTop"
+                        android:layout_marginEnd="@dimen/pencilIconMarginEnd"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/circle1"
+                        android:layout_width="@dimen/circleWidth"
+                        android:layout_height="@dimen/circleHeight"
+                        android:layout_marginStart="@dimen/circleMarginStart"
+                        android:layout_marginTop="@dimen/circleMarginTop"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/childCardHeight"
-            android:layout_margin="@dimen/childCardMargin"
-            app:cardBackgroundColor="@color/childCardBackgroundColor"
-            app:cardCornerRadius="@dimen/childCardCornerRadius"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_row="1">
+                    <ImageView
+                        android:id="@+id/avatar1"
+                        android:layout_width="@dimen/childAvatarWidth"
+                        android:layout_height="@dimen/childAvatarHeight"
+                        android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                        android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                        app:layout_constraintBottom_toBottomOf="@+id/circle1"
+                        app:layout_constraintEnd_toEndOf="@+id/circle1"
+                        app:layout_constraintStart_toStartOf="@+id/circle1"
+                        app:layout_constraintTop_toTopOf="@+id/circle1"
+                        android:imageResource='@{resourceUtils.getResourceDrawableId(viewModel.childList.size()>=1? viewModel.childList.get(0).drawableName: "ic_baseline_person_24", context)}' />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/childName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/childNameMarginStart"
+                        android:layout_marginBottom="@dimen/childNameMarginBottom"
+                        android:text='@{viewModel.childList.size()>=1? viewModel.childList.get(0).name: "", default="NAME"}'
+                        android:textSize="@dimen/childNameTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circle1" />
 
-                <TextView
-                    android:id="@+id/checkText3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/checkTextMarginStart"
-                    android:layout_marginTop="@dimen/checkTextMarginTop"
-                    android:text="@string/checkValue3"
-                    app:layout_constraintStart_toEndOf="@+id/circle3"
-                    app:layout_constraintTop_toBottomOf="@id/heartText3"
-                    app:drawableStartCompat="@drawable/check"
-                    android:drawablePadding="@dimen/iconPadding"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/heartText3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/heartTextMarginStart"
-                    android:layout_marginBottom="@dimen/heartTextMarginBottom"
-                    android:text="@string/heartValue3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle3"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableStartCompat="@drawable/heart"
-                    android:drawablePadding="@dimen/iconPadding"/>
+            </androidx.cardview.widget.CardView>
 
-                <ImageView
-                    android:id="@+id/pencil3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pencilIconMarginTop"
-                    android:layout_marginEnd="@dimen/pencilIconMarginEnd"
-                    app:srcCompat="@android:drawable/ic_menu_edit"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/childCardMargin"
+                app:cardBackgroundColor="@color/childCardBackgroundColor"
+                app:cardCornerRadius="@dimen/childCardCornerRadius"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="0">
 
-                <ImageView
-                    android:id="@+id/circle3"
-                    android:layout_width="@dimen/circleWidth"
-                    android:layout_height="@dimen/circleHeight"
-                    android:layout_marginStart="@dimen/circleMarginStart"
-                    android:layout_marginTop="@dimen/circleMarginTop"
-                    android:src="@drawable/circle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/avatar3"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle3"
-                    app:layout_constraintEnd_toEndOf="@+id/circle3"
-                    app:layout_constraintStart_toStartOf="@+id/circle3"
-                    app:layout_constraintTop_toTopOf="@+id/circle3"
-                    app:srcCompat="@drawable/snake" />
+                    <TextView
+                        android:id="@+id/checkText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/checkTextMarginStart"
+                        android:layout_marginTop="@dimen/checkTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(1).dutyPoints): "", default="0"}'
+                        app:layout_constraintStart_toEndOf="@+id/circle2"
+                        app:layout_constraintTop_toBottomOf="@id/heartText2"
+                        app:drawableStartCompat="@drawable/check"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-                <TextView
-                    android:id="@+id/childName3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/childNameMarginStart"
-                    android:text="@string/childName3"
-                    android:textSize="@dimen/childNameTextSize"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/avatar3" />
+                    <TextView
+                        android:id="@+id/heartText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/heartTextMarginStart"
+                        android:layout_marginBottom="@dimen/heartTextMarginBottom"
+                        android:layout_marginTop="@dimen/heartTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(1).behaviourPoints): "", default="0"}'
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/circle2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:drawableStartCompat="@drawable/heart"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/pencil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pencilIconMarginTop"
+                        android:layout_marginEnd="@dimen/pencilIconMarginEnd"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@android:drawable/ic_menu_edit"/>
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/circle2"
+                        android:layout_width="@dimen/circleWidth"
+                        android:layout_height="@dimen/circleHeight"
+                        android:layout_marginStart="@dimen/circleMarginStart"
+                        android:layout_marginTop="@dimen/circleMarginTop"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/childCardHeight"
-            android:layout_margin="@dimen/childCardMargin"
-            app:cardBackgroundColor="@color/childCardBackgroundColor"
-            app:cardCornerRadius="@dimen/childCardCornerRadius"
-            app:layout_column="1"
-            app:layout_columnWeight="1"
-            app:layout_row="1">
+                    <ImageView
+                        android:id="@+id/avatar2"
+                        android:layout_width="@dimen/childAvatarWidth"
+                        android:layout_height="@dimen/childAvatarHeight"
+                        android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                        android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                        app:layout_constraintBottom_toBottomOf="@+id/circle2"
+                        app:layout_constraintEnd_toEndOf="@+id/circle2"
+                        app:layout_constraintStart_toStartOf="@+id/circle2"
+                        app:layout_constraintTop_toTopOf="@+id/circle2"
+                        android:imageResource='@{resourceUtils.getResourceDrawableId(viewModel.childList.size()>=1? viewModel.childList.get(1).drawableName: "ic_baseline_person_24", context)}' />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/childName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/childNameMarginStart"
+                        android:layout_marginBottom="@dimen/childNameMarginBottom"
+                        android:text='@{viewModel.childList.size()>=1? viewModel.childList.get(1).name: "", default="NAME"}'
+                        android:textSize="@dimen/childNameTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circle2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/checkText4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/checkTextMarginStart"
-                    android:layout_marginTop="@dimen/checkTextMarginTop"
-                    android:text="@string/checkValue4"
-                    app:layout_constraintStart_toEndOf="@+id/circle4"
-                    app:layout_constraintTop_toBottomOf="@id/heartText4"
-                    app:drawableStartCompat="@drawable/check"
-                    android:drawablePadding="@dimen/iconPadding"/>
+            </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/heartText4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/heartTextMarginStart"
-                    android:layout_marginBottom="@dimen/heartTextMarginBottom"
-                    android:text="@string/heartValue4"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/circle4"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:drawableStartCompat="@drawable/heart"
-                    android:drawablePadding="@dimen/iconPadding"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/childCardMargin"
+                app:cardBackgroundColor="@color/childCardBackgroundColor"
+                app:cardCornerRadius="@dimen/childCardCornerRadius"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="1">
 
-                <ImageView
-                    android:id="@+id/pencil4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pencilIconMarginTop"
-                    android:layout_marginEnd="@dimen/pencilIconMarginEnd"
-                    app:srcCompat="@android:drawable/ic_menu_edit"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/circle4"
-                    android:layout_width="@dimen/circleWidth"
-                    android:layout_height="@dimen/circleHeight"
-                    android:layout_marginStart="@dimen/circleMarginStart"
-                    android:layout_marginTop="@dimen/circleMarginTop"
-                    android:src="@drawable/circle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/checkText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/checkTextMarginStart"
+                        android:layout_marginTop="@dimen/checkTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(2).dutyPoints): "", default="0"}'
+                        app:layout_constraintStart_toEndOf="@+id/circle3"
+                        app:layout_constraintTop_toBottomOf="@id/heartText3"
+                        app:drawableStartCompat="@drawable/check"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-                <ImageView
-                    android:id="@+id/avatar4"
-                    android:layout_width="@dimen/childAvatarWidth"
-                    android:layout_height="@dimen/childAvatarHeight"
-                    android:layout_marginEnd="@dimen/childAvatarMarginEnd"
-                    android:layout_marginBottom="@dimen/childAvatarMarginBottom"
-                    app:layout_constraintBottom_toBottomOf="@+id/circle4"
-                    app:layout_constraintEnd_toEndOf="@+id/circle4"
-                    app:layout_constraintStart_toStartOf="@+id/circle4"
-                    app:layout_constraintTop_toTopOf="@+id/circle4"
-                    app:srcCompat="@drawable/frog1" />
+                    <TextView
+                        android:id="@+id/heartText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/heartTextMarginStart"
+                        android:layout_marginBottom="@dimen/heartTextMarginBottom"
+                        android:layout_marginTop="@dimen/heartTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(2).behaviourPoints): "", default="0"}'
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/circle3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:drawableStartCompat="@drawable/heart"
+                        android:drawablePadding="@dimen/iconPadding"/>
 
-                <TextView
-                    android:id="@+id/childName4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/childNameMarginStart"
-                    android:text="@string/childName4"
-                    android:textSize="@dimen/childNameTextSize"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/avatar4" />
+                    <ImageView
+                        android:id="@+id/pencil3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pencilIconMarginTop"
+                        android:layout_marginEnd="@dimen/pencilIconMarginEnd"
+                        app:srcCompat="@android:drawable/ic_menu_edit"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/circle3"
+                        android:layout_width="@dimen/circleWidth"
+                        android:layout_height="@dimen/circleHeight"
+                        android:layout_marginStart="@dimen/circleMarginStart"
+                        android:layout_marginTop="@dimen/circleMarginTop"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/avatar3"
+                        android:layout_width="@dimen/childAvatarWidth"
+                        android:layout_height="@dimen/childAvatarHeight"
+                        android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                        android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                        app:layout_constraintBottom_toBottomOf="@+id/circle3"
+                        app:layout_constraintEnd_toEndOf="@+id/circle3"
+                        app:layout_constraintStart_toStartOf="@+id/circle3"
+                        app:layout_constraintTop_toTopOf="@+id/circle3"
+                        android:imageResource='@{resourceUtils.getResourceDrawableId(viewModel.childList.size()>=1? viewModel.childList.get(2).drawableName: "ic_baseline_person_24", context)}' />
 
-    </androidx.gridlayout.widget.GridLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/childName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/childNameMarginStart"
+                        android:layout_marginBottom="@dimen/childNameMarginBottom"
+                        android:text='@{viewModel.childList.size()>=1? viewModel.childList.get(2).name: "", default="NAME"}'
+                        android:textSize="@dimen/childNameTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circle3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/childCardMargin"
+                app:cardBackgroundColor="@color/childCardBackgroundColor"
+                app:cardCornerRadius="@dimen/childCardCornerRadius"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/checkText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/checkTextMarginStart"
+                        android:layout_marginTop="@dimen/checkTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(3).dutyPoints): "", default="0"}'
+                        app:layout_constraintStart_toEndOf="@+id/circle4"
+                        app:layout_constraintTop_toBottomOf="@id/heartText4"
+                        app:drawableStartCompat="@drawable/check"
+                        android:drawablePadding="@dimen/iconPadding"/>
+
+                    <TextView
+                        android:id="@+id/heartText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/heartTextMarginStart"
+                        android:layout_marginBottom="@dimen/heartTextMarginBottom"
+                        android:layout_marginTop="@dimen/heartTextMarginTop"
+                        android:text='@{viewModel.childList.size()>=1? Integer.toString(viewModel.childList.get(3).behaviourPoints): "", default="0"}'
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/circle4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:drawableStartCompat="@drawable/heart"
+                        android:drawablePadding="@dimen/iconPadding"/>
+
+                    <ImageView
+                        android:id="@+id/pencil4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pencilIconMarginTop"
+                        android:layout_marginEnd="@dimen/pencilIconMarginEnd"
+                        app:srcCompat="@android:drawable/ic_menu_edit"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/circle4"
+                        android:layout_width="@dimen/circleWidth"
+                        android:layout_height="@dimen/circleHeight"
+                        android:layout_marginStart="@dimen/circleMarginStart"
+                        android:layout_marginTop="@dimen/circleMarginTop"
+                        android:src="@drawable/circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/avatar4"
+                        android:layout_width="@dimen/childAvatarWidth"
+                        android:layout_height="@dimen/childAvatarHeight"
+                        android:layout_marginEnd="@dimen/childAvatarMarginEnd"
+                        android:layout_marginBottom="@dimen/childAvatarMarginBottom"
+                        app:layout_constraintBottom_toBottomOf="@+id/circle4"
+                        app:layout_constraintEnd_toEndOf="@+id/circle4"
+                        app:layout_constraintStart_toStartOf="@+id/circle4"
+                        app:layout_constraintTop_toTopOf="@+id/circle4"
+                        android:imageResource='@{resourceUtils.getResourceDrawableId(viewModel.childList.size()>=1? viewModel.childList.get(3).drawableName: "ic_baseline_person_24", context)}' />
+
+                    <TextView
+                        android:id="@+id/childName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/childNameMarginStart"
+                        android:layout_marginBottom="@dimen/childNameMarginBottom"
+                        android:text='@{viewModel.childList.size()>=1? viewModel.childList.get(3).name: "", default="NAME"}'
+                        android:textSize="@dimen/childNameTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circle4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.kidsgamesprojects.childduties.ui.home.HomeViewModel" />
+
+        <variable
+            name="resourceUtils"
+            type="com.kidsgamesprojects.childduties.utils.ResourceUtils"/>
+
+    </data>
+
+
+</layout>
